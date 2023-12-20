@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int num, sum = 0;
+
+    printf("Enter numbers (enter 0 to stop):\n");
+
+    do {
+        // Input: Read a number from the user
+        scanf("%d", &num);
+
+        // Check if the number is odd and not 0
+        if (num % 2 != 0 && num != 0) {
+            sum += num;
+        }
+    } while (num != 0);  // Continue until 0 is entered
+
+    // Output: Print the sum of odd numbers
+    printf("Sum of odd numbers: %d\n", sum);
+
+    return 0;
+}
