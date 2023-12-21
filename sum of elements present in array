@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int ar[50],i,n,sum=0;
+	printf("enter a number = ");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&ar[i]);
+		sum=sum+ar[i];
+	}
+	printf("sum=%d",sum);
+	return 0;
+}
